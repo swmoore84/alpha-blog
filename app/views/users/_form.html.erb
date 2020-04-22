@@ -1,0 +1,10 @@
+<%= simple_form_for(user) do |f| %>
+    <%= f.input :username, label_html: { class: 'col-2 col-form-label' }, input_html: { class: 'form-control col-10' } %>
+    <%= f.input :email, label_html: { class: 'col-2 col-form-label' }, input_html: { class: 'form-control col-10' } %>
+    <%= f.input :password, label_html: { class: 'col-2 col-form-label' }, input_html: { class: 'form-control col-10' } %>
+    <%= f.submit class:"btn btn-outline-light btn-lg" %>
+<% end %>
+<br>
+<div class="text-center">
+  <%= link_to 'Return to articles listing', articles_path, class: 'btn btn-outline-secondary'  %>
+</div>
