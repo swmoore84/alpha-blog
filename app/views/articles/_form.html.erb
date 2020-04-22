@@ -1,5 +1,7 @@
 <%= simple_form_for(article) do |f| %>
-
+  <%= f.error :base %>
+  <%= f.error :user_id %>
+  <%= f.error_notification %>
     <%= f.input :title, label_html: { class: 'col-2 col-form-label' }, input_html: { class: 'form-control col-10' } %>
     <%= f.input :description, label_html: { class: 'col-2 col-form-label' }, input_html: { class: 'form-control col-10' } %>
     <%= f.submit class:"btn btn-outline-light btn-lg" %>
